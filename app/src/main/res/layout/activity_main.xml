@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Send To Me"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Receive Log"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9">
+                    <TextView
+                        android:id="@+id/receive_log"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="10dp"
+                        />
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Send Log"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9">
+                    <TextView
+                        android:id="@+id/send_log"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_blue_bright"
+                        android:textSize="10dp"
+                        />
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/msg_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="6"
+                android:textSize="13dp"
+                android:layout_gravity="center"
+                android:hint="input Msg" />
+            <Button
+                android:id="@+id/msg_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="SEND" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
